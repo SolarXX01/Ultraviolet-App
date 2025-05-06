@@ -1,36 +1,46 @@
 {
-	"name": "uv-app",
-	"version": "1.0.0",
-	"description": "Ultraviolet instance",
-	"type": "module",
-	"engines": {
-		"npm": ">=7.0.0",
-		"node": ">=16.0.0"
-	},
-	"scripts": {
-		"start": "node src/index.js",
-		"format": "prettier --config .prettierrc.js --write .",
-		"lint": "eslint ./src/",
-		"lint:fix": "eslint ./src/ --fix"
-	},
-	"keywords": [
-		"proxy"
-	],
-	"author": "",
-	"license": "GPL-3.0-or-later",
-	"dependencies": {
-		"@fastify/static": "^8.0.2",
-		"@mercuryworkshop/bare-mux": "^2.1.6",
-		"@mercuryworkshop/epoxy-transport": "^2.1.25",
-		"@titaniumnetwork-dev/ultraviolet": "^3.2.10",
-		"fastify": "^5.0.0",
-		"ultraviolet-static": "github:titaniumnetwork-dev/Ultraviolet-Static",
-		"wisp-server-node": "^1.1.7",
-		"ws": "^8.18.0"
-	},
-	"devDependencies": {
-		"eslint": "^9.13.0",
-		"prettier": "^3.3.3"
-	},
-	"packageManager": "pnpm@9.12.2"
+  "name": "uv-app",
+  "version": "1.0.0",
+  "description": "Ultraviolet instance",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0",
+    "pnpm": ">=9.12.2"
+  },
+  "packageManager": "pnpm@9.12.2",
+  "scripts": {
+    "start": "node src/index.js",
+    "format": "prettier --config .prettierrc.js --write .",
+    "lint": "eslint ./src/",
+    "lint:fix": "eslint ./src/ --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/uv-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/uv-app/issues"
+  },
+  "homepage": "https://github.com/yourusername/uv-app#readme",
+  "author": "Your Name <you@example.com>",
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "proxy"
+  ],
+  "dependencies": {
+    "@fastify/static": "^8.0.2",
+    "@mercuryworkshop/bare-mux": "^2.1.6",
+    "@mercuryworkshop/epoxy-transport": "^2.1.25",
+    "@titaniumnetwork-dev/ultraviolet": "^3.2.10",
+    "fastify": "^5.0.0",
+    "ultraviolet-static": "github:titaniumnetwork-dev/Ultraviolet-Static#v1.0.0",
+    "wisp-server-node": "^1.1.7",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.13.0",
+    "prettier": "^3.3.3"
+  }
 }
